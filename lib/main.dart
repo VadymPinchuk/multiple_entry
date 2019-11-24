@@ -9,6 +9,7 @@ void main() => runApp(
       ),
     );
 
+@pragma('vm:entry-point')
 void blue() => runApp(
       MultiEntryApp(
         initialRoute: blueRoute,
@@ -16,6 +17,7 @@ void blue() => runApp(
       ),
     );
 
+@pragma('vm:entry-point')
 void purple() => runApp(
       MultiEntryApp(
         initialRoute: purpleRoute,
