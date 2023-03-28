@@ -8,13 +8,14 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-        android:name="io.flutter.app.FlutterApplication"
+        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
         android:label="multientry"
         tools:replace="android:label">
         <activity
             android:name=".AmberActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
             android:hardwareAccelerated="true"
             android:label="3 colors"
             android:launchMode="singleTop"
@@ -23,9 +24,10 @@
             <!-- Specify that the launch screen should continue being displayed -->
             <!-- until Flutter renders its first frame. -->
             <meta-data
-                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
                 android:resource="@drawable/launch_background" />
 
+            <!-- Theme to apply as soon as Flutter begins rendering frames -->
             <!-- Theme to apply as soon as Flutter begins rendering frames -->
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
@@ -39,6 +41,7 @@
         <activity
             android:name=".BlueActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
             android:hardwareAccelerated="true"
             android:label="2 colors"
             android:launchMode="singleTop"
@@ -47,7 +50,7 @@
             <!-- Specify that the launch screen should continue being displayed -->
             <!-- until Flutter renders its first frame. -->
             <meta-data
-                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
                 android:resource="@drawable/launch_background" />
 
             <!-- Theme to apply as soon as Flutter begins rendering frames -->
@@ -63,6 +66,7 @@
         <activity
             android:name=".PurpleActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:exported="true"
             android:hardwareAccelerated="true"
             android:label="1 color"
             android:launchMode="singleTop"
@@ -71,7 +75,7 @@
             <!-- Specify that the launch screen should continue being displayed -->
             <!-- until Flutter renders its first frame. -->
             <meta-data
-                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
                 android:resource="@drawable/launch_background" />
 
             <!-- Theme to apply as soon as Flutter begins rendering frames -->
