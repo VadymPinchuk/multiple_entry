@@ -17,5 +17,5 @@ Is it possible? Why do we need it? In some cases it is really useful - so check 
 Cheers.
 
 ## Useful links
-https://github.com/flutter/flutter/wiki/Experimental:-Launch-Flutter-with-non-main-entrypoint
-https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects#add-to-app-migration
+- Experimental feature: https://github.com/flutter/flutter/wiki/Experimental:-Launch-Flutter-with-non-main-entrypoint
+- Update pre v1.12 - https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects#add-to-app-migration
