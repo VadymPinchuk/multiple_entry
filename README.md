@@ -15,3 +15,7 @@ One package, one code base, but different entry points to the application with d
 Is it possible? Why do we need it? In some cases it is really useful - so check this code and you will find it interesting. 
 
 Cheers.
+
+## Useful links
+https://github.com/flutter/flutter/wiki/Experimental:-Launch-Flutter-with-non-main-entrypoint
+https://github.com/flutter/flutter/wiki/Upgrading-pre-1.12-Android-projects#add-to-app-migration
