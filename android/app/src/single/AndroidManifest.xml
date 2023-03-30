@@ -13,11 +13,11 @@
         android:label="multientry"
         tools:replace="android:label">
         <activity
-            android:name=".MainActivity"
+            android:name=".AllColorsActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
-            android:label="Main generic activity"
+            android:label="All 3 colors"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
             android:windowSoftInputMode="adjustResize">

@@ -1,8 +1,14 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:multientry/routing.dart';
 
 class AmberPage extends StatelessWidget {
+  final bool isChained;
+
+  const AmberPage([this.isChained = true]);
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -14,15 +20,17 @@ class AmberPage extends StatelessWidget {
             onPressed: () => pop(context),
           ),
           title: Text('Amber'),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
-              ),
-              onPressed: () => Navigator.of(context).pushNamed(blueRoute),
-            )
-          ],
+          actions: isChained
+              ? <Widget>[
+                  IconButton(
+                    icon: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                    onPressed: () => Navigator.of(context).pushNamed(blueRoute),
+                  )
+                ]
+              : [],
         ),
         body: Container(
           color: Colors.amber,
@@ -31,6 +39,10 @@ class AmberPage extends StatelessWidget {
 }
 
 class BluePage extends StatelessWidget {
+  final bool isChained;
+
+  const BluePage([this.isChained = true]);
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -42,15 +54,18 @@ class BluePage extends StatelessWidget {
             onPressed: () => pop(context),
           ),
           title: Text('Blue'),
-          actions: <Widget>[
-            IconButton(
-              icon: Icon(
-                Icons.arrow_forward,
-                color: Colors.white,
-              ),
-              onPressed: () => Navigator.of(context).pushNamed(purpleRoute),
-            )
-          ],
+          actions: isChained
+              ? <Widget>[
+                  IconButton(
+                    icon: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(purpleRoute),
+                  )
+                ]
+              : [],
         ),
         body: Container(
           color: Colors.blue,
@@ -59,6 +74,10 @@ class BluePage extends StatelessWidget {
 }
 
 class PurplePage extends StatelessWidget {
+  final bool isChained;
+
+  const PurplePage([this.isChained = true]);
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -70,6 +89,18 @@ class PurplePage extends StatelessWidget {
             onPressed: () => pop(context),
           ),
           title: Text('Purple'),
+          actions: isChained
+              ? <Widget>[
+                  IconButton(
+                    icon: Icon(
+                      Icons.arrow_forward,
+                      color: Colors.white,
+                    ),
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(amberRoute),
+                  )
+                ]
+              : [],
         ),
         body: Container(
           color: Colors.deepPurpleAccent,
