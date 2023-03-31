@@ -7,7 +7,7 @@ Currently support latest stable Flutter v3.7.9
 ## Articles
 - Flutter 1.9 - https://medium.com/@vad.pinchuk/multiple-entry-android-application-with-flutter-or-alternative-ways-to-restrict-access-to-1260e097ef9f
 - Flutter 1.12 - https://medium.com/@vad.pinchuk/multiple-entry-android-application-with-flutter-1-12-story-update-5f5a69e57d8f
-- Flutter 3.7.9 - To come
+- Flutter 3.7.9 - https://medium.com/@vad.pinchuk/exploring-the-latest-state-of-flutters-experimental-feature-for-developing-multiple-entry-android-588c15c8c1ca
 
 ## More information
 
