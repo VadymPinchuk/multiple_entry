@@ -4,13 +4,13 @@ import 'package:multientry/routing.dart';
 
 class MultiEntryApp extends StatefulWidget {
   final String initialRoute;
-  final Color primaryColor;
+  final MaterialColor primaryColor;
 
   MultiEntryApp({
-    Key key,
-    @required this.initialRoute,
-    @required this.primaryColor,
-  }) : super(key: key);
+    super.key,
+    required this.initialRoute,
+    required this.primaryColor,
+  });
 
   @override
   _MultiEntryAppState createState() => _MultiEntryAppState();
@@ -23,6 +23,7 @@ class _MultiEntryAppState extends State<MultiEntryApp> {
           primarySwatch: widget.primaryColor,
         ),
         initialRoute: '/',
-        onGenerateRoute: (RouteSettings settings) => generateRoute(settings, widget.initialRoute),
+        onGenerateRoute: (RouteSettings settings) =>
+            generateRoute(settings, widget.initialRoute),
       );
 }
