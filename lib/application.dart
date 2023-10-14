@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:multientry/routing.dart';
 
 class MultiEntryApp extends StatefulWidget {
@@ -20,7 +19,8 @@ class _MultiEntryAppState extends State<MultiEntryApp> {
   @override
   Widget build(BuildContext context) => MaterialApp(
         theme: ThemeData(
-          primarySwatch: widget.primaryColor,
+          useMaterial3: true,
+          colorSchemeSeed: widget.primaryColor,
         ),
         initialRoute: '/',
         onGenerateRoute: (RouteSettings settings) =>
